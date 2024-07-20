@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Preload images -->
+    <link rel="preload" as="image" href="hero-bg.jpg">
+</head>
+<body>
+    <div id="presentation" class="presentation" style="background-image: url('hero-bg.jpg');">
+        <h1>TECHGO</h1>
+        <p>Bienvenido a la mejor aplicación móvil para gestionar tu restaurante. Descubre cómo nuestra innovadora plataforma puede transformar la forma en que administras tu negocio</p>
+        <button class="btn btn-hover" onclick="showForm()">Presionar Boton</button>
+    </div>
+    
+    <div class="container" id="form-container" style="display: none;">
+        <div class="form-content" id="form-section">
+            <h1 id="title">Registro</h1>
+            <form id="form">
+                <div class="input-group">
+                    <div class="input-field" id="nameInput">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="correo" placeholder="Correo">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="contrasena" placeholder="Contraseña">
+                    </div>
+                    <p>Olvidaste tu contraseña <a href="https://support.google.com/accounts/answer/41078?hl=es-419&co=GENIE.Platform%3DAndroid" target="blank" style="color: yellow">click aquí</a></p>
+                </div>
+                <div class="btn-field">
+                    <button id="signUp" type="button">Registrar</button>
+                    <button id="signIn" type="button" class="disable">Iniciar Sesion</button>
+                </div>
+                <button id="accept" type="button" class="center-button">Aceptar</button>
+            </form>
+            <button class="btn-back" onclick="goBack()">Volver</button>
+        </div>
+
+        <div class="food-list" id="food-section" style="display:none;">
+            <div class="box">
+                <input type="text" id="searchInput" placeholder="Buscar...">
+                <a href="#" id="searchIcon"><i class="fa-solid fa-magnifying-glass" style="color: blue"></i></a>
+
+                <button class="btn-back" onclick="goBack()">Volver</button>
+            </div>
+            <h1>Objetos Perdidos</h1>
+            <div class="food-item" id="celular">
+                <img src="celular.png" alt="Celular">
+                <div class="food-details">
+                    <h2><strong>Celular</strong></h2>
+                </div>
+            </div>
+            <div class="food-item" id="laptop">
+                <img src="laptop.jpg" alt="Laptop">
+                <div class="food-details">
+                    <h2><strong>Laptop</strong></h2>
+                </div>
+            </div>
+            <div class="food-item" id="reloj">
+                <img src="reloj.jpeg" alt="Reloj">
+                <div class="food-details">
+                    <h2><strong>Reloj</strong></h2>
+                </div>
+            </div>
+            <div class="food-item" id="mouse">
+                <img src="mouse.jpg" alt="Mouse">
+                <div class="food-details">
+                    <h2><strong>Mouse</strong></h2>
+                </div>
+            </div>
+            <div class="food-item" id="Ipad">
+                <img src="Ipad.png" alt="Ipad">
+                <div class="food-details">
+                    <h2><strong>Ipad</strong></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
