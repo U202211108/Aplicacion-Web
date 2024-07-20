@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.presentation {
+    text-align: center;
+    padding: 100px; /* Reduce el padding general para ajustar la posición */
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.presentation h1 {
+    font-size: 80px;
+    margin-bottom: 50px; /* Reduce el margen inferior para acercar el párrafo */
+    padding-right: 30px;
+}
+
+.presentation p {
+    font-size: 20px;
+    margin-bottom: 20px; /* Ajusta el margen inferior para subir el botón */
+}
+
+.presentation .btn {
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    background: #04BD7D;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px; /* Añade margen superior si es necesario para espaciar del párrafo */
+    margin-right: 40px;
+}
+
+.presentation .btn:hover {
+    background: #028a58;
+}
+
+/* Formularios y contenido */
+.form-content, .food-list {
+    background: #333;
+    color: #fff;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .presentation h1 {
+        font-size: 5vw; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .presentation p {
+        font-size: 2vw;
+    }
+    
+    .form-content, .food-list {
+        padding: 3%; /* Reduce el padding para pantallas pequeñas */
+    }
+}
+
+.form-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: #515966;
+    margin: 15px 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: #04BD7D;
+}
+
+input, textarea {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: black;
+}
+
+input::placeholder, textarea::placeholder {
+    color: black;
+}
+
+.btn-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    width: 48%;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-field button:hover {
+    background: yellow;
+}
+
+.center-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: black;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.center-button:hover {
+    background: yellow;
+}
+
+.food-list {
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.food-list .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.food-list input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.food-list a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.food-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.food-item img {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.food-details h2 {
+    font-size: 1.5rem;
+    color: #04BD7D;
+}
+
+.button-container {
+    position: relative;
+}
+
+.btn-back {
+    position: fixed;
+    bottom: 8px; /* Ajusta según tu preferencia de distancia desde abajo */
+    right: 50px; /* Ajusta según tu preferencia de distancia desde la derecha */
+    padding: 6px 12px; /* Ajusta el padding según tu diseño */
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-back:hover {
+    background: darkred;
+}
